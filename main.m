@@ -33,7 +33,7 @@ neq = nl*nc*ncp*na;
 % I = irradiação (perturbação)
 % Tif = temperatura de entrada (perturbação)
 % meq = entrada do sistema em malha aberta
-
+I = 900;
 
 %ESPACO DE ESTADOS LINEARIZADO
 
