@@ -1,5 +1,5 @@
 clc; clear;
-%% Entradas
+% Entradas
 
 Aa = 1.7453e-4; %Absorver cross-section area
 Cp = 4190;
@@ -59,10 +59,10 @@ C = pid (kp,ki);
 T = feedback(C*G,1);
 
 %Função de transferência das pertubações
-P1 = tf([1],[1]);
-P2 = tf([1],[1]);
+P1 = G;
+P2 = G;
 
 %Controlador feedfoward
-Gff1 = P1/C;
-Gff2 = P2/C;
+Gff1 = -P1/G;
+Gff2 = -P2/G;
 
